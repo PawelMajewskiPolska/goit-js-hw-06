@@ -10,8 +10,13 @@ function handleSubmit(eve) {
 
 	if (email.value === "" || password.value === "") {
 		return alert("Uzupełnij wszystkie pola :-)");
-	}
+	} else {
+		const getData = {
+			email: email.value,
+			password: password.value,
+		};
 
-	console.log(`Login: ${email.value}, Password: ${password.value}`);
-	eve.currentTarget.reset();
+		console.log(getData);
+		eve.currentTarget.reset();
+	}
 }

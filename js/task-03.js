@@ -19,7 +19,6 @@ const urlAdress = [];
 for (let element of images) {
 	urlAdress.push(`${element.url} height = '273' alt= "${element.alt}"`);
 }
-console.log(urlAdress);
 const addImages = urlAdress
 	.map((el) => `<li class = newClass><img src=${el}></img></li>`)
 	.join("");

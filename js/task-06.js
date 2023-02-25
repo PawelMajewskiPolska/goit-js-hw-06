@@ -6,7 +6,7 @@ const getAtribute = document.querySelector(
 const checkInputValue = (eve) => {
 	textInput.textContent = eve.currentTarget.value;
 
-	if (textInput.textContent.length >= getAtribute.dataset.length) {
+	if (textInput.textContent.length == getAtribute.dataset.length) {
 		textInput.classList.remove("invalid");
 		textInput.classList.add("valid");
 	} else {
